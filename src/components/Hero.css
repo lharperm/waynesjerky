@@ -64,11 +64,19 @@
   cursor: pointer;
   transition: all 0.2s ease;
   letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .order-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+
+.order-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {

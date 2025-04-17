@@ -1,6 +1,10 @@
 import './Header.css'
 
 const Header = () => {
+  const emailTemplate = `Your Address:
+Your Name:
+Your Order:`
+
   return (
     <header className="header">
       <div className="header-content">
@@ -13,8 +17,13 @@ const Header = () => {
           />
         </div>
         <nav className="nav-links">
-          <a href="#instagram" className="nav-link">Instagram</a>
-          <a href="#order" className="nav-link">Place an Order</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="nav-link">Instagram</a>
+          <a 
+            href={`mailto:WaynesPremiumJerky@gmail.com?subject=Order&body=${encodeURIComponent(emailTemplate)}`} 
+            className="nav-link"
+          >
+            Place an Order
+          </a>
           <a href="#about" className="nav-link">About</a>
         </nav>
       </div>
