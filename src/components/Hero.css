@@ -50,6 +50,7 @@
   align-items: center;
   width: 100%;
   margin-bottom: 1rem;
+  padding: 0 1rem;
 }
 
 .order-button {
@@ -72,14 +73,46 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 2rem 1rem 1rem;
+    padding: 1rem;
   }
 
   .hero h1 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
+    padding: 0 1rem;
   }
   
   .hero .subtitle {
     font-size: 1.125rem;
+    padding: 0 1rem;
+  }
+
+  .hero-logo img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .order-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-logo img {
+    height: 250px;
+  }
+
+  .hero .subtitle {
+    font-size: 1rem;
+  }
+
+  .order-button {
+    font-size: 1rem;
+    padding: 0.875rem 1.5rem;
   }
 } 
